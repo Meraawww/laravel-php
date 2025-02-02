@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->foreignid('user_id')->references('id')->on('users'); 
             $table->foreignid('movies_id')->reference('id')->on('movies');
-            $table->text('Content');
-            $table->text('Point');
+            $table->text('content');
+            $table->text('point');
             $table->timestamps();
         });
     }

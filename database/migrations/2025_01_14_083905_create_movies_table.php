@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('movies', function (Blueprint $table) {
             $table->id();
-            $table->string('name' , length: 45);
+            $table->string('nama' , length: 45);
             $table->string('title' , length: 45);
             $table->text('summary');
             $table->integer('tahun');
             $table->string('poster' , length: 255);
-            $table->foreignId('genre_id')->reference('id')->on('genres');
+            $table->foreignid('genre_id')->reference('id')->on('genres');
             $table->timestamps();
         });
     }

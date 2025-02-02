@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignid('movies_id')->reference('id')->on('movies');
             $table->foreignid('casts_id')->reference('id')->on('casts');
-            $table->string('Nama', length:45);
+            $table->string('nama', length:45);
             $table->timestamps();
         });
     }

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('Umur');
             $table->text('Bio');
             $table->text('Alamat');
-            $table->foreign('user_id')->reference('id')->on('users');
+            $table->foreignid('user_id')->reference('id')->on('users');
             $table->timestamps();
         });
     }
